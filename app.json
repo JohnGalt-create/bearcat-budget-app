@@ -1,0 +1,12 @@
+{
+  "expo": {
+    "name": "Bearcat Budget",
+    "slug": "bearcat-budget",
+    "version": "1.0.0",
+    "platforms": ["ios", "android", "web"],
+    "sdkVersion": "48.0.0",
+    "extra": {
+      "FIREBASE_API_KEY": "process.env.FIREBASE_API_KEY"
+    }
+  }
+}

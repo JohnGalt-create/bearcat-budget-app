@@ -2,22 +2,51 @@
   "name": "bearcat-budget",
   "version": "1.0.0",
   "type": "module",
+  "private": true,
+  "main": "index.js",
   "scripts": {
     "start": "expo start --web",
+    "android": "expo run:android",
+    "ios": "expo run:ios",
+    "web": "expo start --web",
     "build": "expo export:web",
     "lint": "eslint ."
   },
   "dependencies": {
-    "expo": "^52.0.0",
-    "react": "18.3.1",
-    "react-dom": "18.3.1",
-    "react-native": "0.76.1",
-    "react-native-web": "~0.19.10",
-    "firebase": "^11.0.1",
-    "openai": "^4.0.0"
+    "expo": "^51.0.0",
+    "expo-status-bar": "~1.12.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-native": "0.74.0",
+    "react-native-web": "~0.19.0",
+    "firebase": "^11.0.0",
+    "openai": "^4.0.0",
+    "react-navigation": "^4.4.4",
+    "@react-navigation/native": "^6.1.6",
+    "@react-navigation/native-stack": "^6.9.12"
   },
   "devDependencies": {
-    "@expo/webpack-config": "^19.0.0"
+    "@babel/core": "^7.23.0",
+    "eslint": "^8.57.0"
   },
-  "private": true
+  "eslintConfig": {
+    "extends": ["expo", "plugin:react/recommended"]
+  },
+  "expo": {
+    "name": "Bearcat Budget",
+    "slug": "bearcat-budget",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "platforms": ["ios", "android", "web"],
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "web": {
+      "bundler": "metro",
+      "favicon": "./assets/favicon.png"
+    }
+  }
 }

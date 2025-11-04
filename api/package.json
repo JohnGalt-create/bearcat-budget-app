@@ -1,0 +1,9 @@
+{
+  "name": "bearcat-budget-api",
+  "version": "1.0.0",
+  "main": "api/ai.js",
+  "dependencies": {
+    "openai": "^4.0.0",
+    "axios": "^1.4.0"
+  }
+}

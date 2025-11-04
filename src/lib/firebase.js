@@ -4,12 +4,12 @@ import { getAuth } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "<FIREBASE_API_KEY>",
-  authDomain: "<FIREBASE_AUTH_DOMAIN>",
-  projectId: "<FIREBASE_PROJECT_ID>",
-  storageBucket: "<FIREBASE_STORAGE_BUCKET>",
-  messagingSenderId: "<FIREBASE_MESSAGING_SENDER_ID>",
-  appId: "<FIREBASE_APP_ID>"
+  apiKey: "AIzaSyDrwg5OM3Q8e9gZxT2POIqxLzVFPdUwRCA",
+  authDomain: "bearcat-budget.firebaseapp.com",
+  projectId: "bearcat-budget",
+  storageBucket: "bearcat-budget.firebasestorage.app",
+  messagingSenderId: "71815663985",
+  appId: "1:71815663985:web:3760b9502ad6fd35e5e6d0"
 };
 
 const app = initializeApp(firebaseConfig);

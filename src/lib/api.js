@@ -2,7 +2,7 @@
 import axios from "axios";
 
 // set this to your deployed Vercel API base, e.g. https://your-vercel.app
-const API_BASE = "https://<YOUR_VERCEL_DOMAIN>";
+const API_BASE = "https://bearcat-budget-app.vercel.app";
 
 export async function getAiSuggestion(userId, context) {
   try {
